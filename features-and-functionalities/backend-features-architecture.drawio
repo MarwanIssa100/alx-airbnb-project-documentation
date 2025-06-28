@@ -1,0 +1,226 @@
+ <mxfile host="app.diagrams.net" modified="2024-01-01T00:00:00.000Z" agent="5.0" etag="xxx" version="22.1.16" type="device">
+  <diagram name="Backend Features Architecture" id="backend-architecture">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Title -->
+        <mxCell id="title" value="Airbnb Clone - Backend Features &amp; Functionalities Architecture" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#2E86AB;" vertex="1" parent="1">
+          <mxGeometry x="200" y="20" width="769" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Main System Container -->
+        <mxCell id="main-system" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#6C757D;strokeWidth=2;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="80" width="1070" height="720" as="geometry" />
+        </mxCell>
+        
+        <!-- 1. User Management Section -->
+        <mxCell id="user-management-title" value="1. User Management" style="text;html=1;strokeColor=none;fillColor=#E3F2FD;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=16;fontStyle=1;fontColor=#1976D2;" vertex="1" parent="1">
+          <mxGeometry x="80" y="100" width="200" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="user-registration" value="User Registration&#xa;• Email/Password signup&#xa;• OAuth (Google, Facebook)&#xa;• Role selection (Guest/Host)&#xa;• Email verification" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E8;strokeColor=#4CAF50;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="80" y="140" width="180" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="user-authentication" value="Authentication &amp; Login&#xa;• JWT token management&#xa;• Session handling&#xa;• Password reset&#xa;• Multi-factor auth" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E8;strokeColor=#4CAF50;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="80" y="240" width="180" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="profile-management" value="Profile Management&#xa;• Update personal info&#xa;• Profile photos&#xa;• Contact details&#xa;• Preferences" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E8;strokeColor=#4CAF50;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="80" y="340" width="180" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="rbac" value="Role-Based Access Control&#xa;• Guest permissions&#xa;• Host permissions&#xa;• Admin permissions&#xa;• API authorization" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E8;strokeColor=#4CAF50;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="80" y="440" width="180" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- 2. Property Management Section -->
+        <mxCell id="property-management-title" value="2. Property Management" style="text;html=1;strokeColor=none;fillColor=#FFF3E0;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=16;fontStyle=1;fontColor=#F57C00;" vertex="1" parent="1">
+          <mxGeometry x="300" y="100" width="200" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="property-listing" value="Property Listings&#xa;• Create new listings&#xa;• Property details&#xa;• Location &amp; coordinates&#xa;• Pricing &amp; availability" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF8E1;strokeColor=#FF9800;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="300" y="140" width="180" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="property-media" value="Media Management&#xa;• Image upload/delete&#xa;• Video support&#xa;• Cloud storage (AWS S3)&#xa;• Image optimization" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF8E1;strokeColor=#FF9800;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="300" y="240" width="180" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="property-amenities" value="Amenities &amp; Features&#xa;• Amenity categories&#xa;• Property features&#xa;• House rules&#xa;• Special requirements" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF8E1;strokeColor=#FF9800;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="300" y="340" width="180" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="property-crud" value="CRUD Operations&#xa;• Update listings&#xa;• Delete properties&#xa;• Draft/Save functionality&#xa;• Bulk operations" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF8E1;strokeColor=#FF9800;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="300" y="440" width="180" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- 3. Search & Discovery Section -->
+        <mxCell id="search-title" value="3. Search &amp; Discovery" style="text;html=1;strokeColor=none;fillColor=#F3E5F5;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=16;fontStyle=1;fontColor=#7B1FA2;" vertex="1" parent="1">
+          <mxGeometry x="520" y="100" width="200" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="search-functionality" value="Search Engine&#xa;• Location-based search&#xa;• Price range filtering&#xa;• Date availability&#xa;• Guest capacity" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8F4FF;strokeColor=#9C27B0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="520" y="140" width="180" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="advanced-filters" value="Advanced Filters&#xa;• Amenity filtering&#xa;• Property type&#xa;• Instant booking&#xa;• Superhost filter" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8F4FF;strokeColor=#9C27B0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="520" y="240" width="180" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="pagination" value="Pagination &amp; Sorting&#xa;• Page-based results&#xa;• Sort by price/rating&#xa;• Infinite scroll&#xa;• Result caching" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8F4FF;strokeColor=#9C27B0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="520" y="340" width="180" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="recommendations" value="Recommendations&#xa;• Similar properties&#xa;• Popular destinations&#xa;• Personalized suggestions&#xa;• Trending locations" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8F4FF;strokeColor=#9C27B0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="520" y="440" width="180" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- 4. Booking System Section -->
+        <mxCell id="booking-title" value="4. Booking System" style="text;html=1;strokeColor=none;fillColor=#E8F5E8;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=16;fontStyle=1;fontColor=#388E3C;" vertex="1" parent="1">
+          <mxGeometry x="740" y="100" width="200" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="booking-creation" value="Booking Creation&#xa;• Date selection&#xa;• Guest count&#xa;• Price calculation&#xa;• Availability check" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F1F8E9;strokeColor=#689F38;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="740" y="140" width="180" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="booking-management" value="Booking Management&#xa;• Booking status tracking&#xa;• Cancellation handling&#xa;• Modification requests&#xa;• Refund processing" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F1F8E9;strokeColor=#689F38;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="740" y="240" width="180" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="calendar-sync" value="Calendar Integration&#xa;• Availability calendar&#xa;• Blocked dates&#xa;• Instant booking&#xa;• Calendar sync" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F1F8E9;strokeColor=#689F38;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="740" y="340" width="180" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="booking-policies" value="Booking Policies&#xa;• Cancellation policies&#xa;• House rules&#xa;• Check-in/out times&#xa;• Guest requirements" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F1F8E9;strokeColor=#689F38;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="740" y="440" width="180" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- 5. Payment System Section -->
+        <mxCell id="payment-title" value="5. Payment System" style="text;html=1;strokeColor=none;fillColor=#FFEBEE;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=16;fontStyle=1;fontColor=#D32F2F;" vertex="1" parent="1">
+          <mxGeometry x="960" y="100" width="200" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="payment-processing" value="Payment Processing&#xa;• Stripe integration&#xa;• PayPal support&#xa;• Multiple currencies&#xa;• Secure transactions" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFEBEE;strokeColor=#F44336;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="960" y="140" width="180" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="payout-system" value="Payout System&#xa;• Host payouts&#xa;• Payment scheduling&#xa;• Tax handling&#xa;• Payment history" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFEBEE;strokeColor=#F44336;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="960" y="240" width="180" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="refund-handling" value="Refund Management&#xa;• Automatic refunds&#xa;• Partial refunds&#xa;• Dispute resolution&#xa;• Refund policies" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFEBEE;strokeColor=#F44336;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="960" y="340" width="180" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="financial-reports" value="Financial Reports&#xa;• Revenue tracking&#xa;• Transaction history&#xa;• Tax reports&#xa;• Analytics" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFEBEE;strokeColor=#F44336;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="960" y="440" width="180" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- Bottom Row - Additional Features -->
+        <mxCell id="reviews-title" value="6. Reviews &amp; Ratings" style="text;html=1;strokeColor=none;fillColor=#E1F5FE;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=16;fontStyle=1;fontColor=#0277BD;" vertex="1" parent="1">
+          <mxGeometry x="80" y="540" width="200" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="review-system" value="Review System&#xa;• Property reviews&#xa;• Host/guest ratings&#xa;• Review moderation&#xa;• Response management" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0F7FA;strokeColor=#00BCD4;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="80" y="580" width="180" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="notifications-title" value="7. Notifications" style="text;html=1;strokeColor=none;fillColor=#FFF8E1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=16;fontStyle=1;fontColor=#F57C00;" vertex="1" parent="1">
+          <mxGeometry x="300" y="540" width="200" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="notification-system" value="Notification System&#xa;• Email notifications&#xa;• Push notifications&#xa;• SMS alerts&#xa;• In-app messages" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF8E1;strokeColor=#FF9800;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="300" y="580" width="180" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="admin-title" value="8. Admin Dashboard" style="text;html=1;strokeColor=none;fillColor=#F3E5F5;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=16;fontStyle=1;fontColor=#7B1FA2;" vertex="1" parent="1">
+          <mxGeometry x="520" y="540" width="200" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="admin-dashboard" value="Admin Features&#xa;• User management&#xa;• Content moderation&#xa;• Analytics dashboard&#xa;• System monitoring" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8F4FF;strokeColor=#9C27B0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="520" y="580" width="180" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="security-title" value="9. Security &amp; Performance" style="text;html=1;strokeColor=none;fillColor=#FFEBEE;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=16;fontStyle=1;fontColor=#D32F2F;" vertex="1" parent="1">
+          <mxGeometry x="740" y="540" width="200" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="security-features" value="Security Features&#xa;• Data encryption&#xa;• Rate limiting&#xa;• Input validation&#xa;• SQL injection protection" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFEBEE;strokeColor=#F44336;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="740" y="580" width="180" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="performance-title" value="10. Performance &amp; Testing" style="text;html=1;strokeColor=none;fillColor=#E8F5E8;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=16;fontStyle=1;fontColor=#388E3C;" vertex="1" parent="1">
+          <mxGeometry x="960" y="540" width="200" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="performance-features" value="Performance Features&#xa;• Redis caching&#xa;• Database optimization&#xa;• Load balancing&#xa;• API testing" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F1F8E9;strokeColor=#689F38;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="960" y="580" width="180" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- Database Schema Section -->
+        <mxCell id="database-title" value="Database Schema" style="text;html=1;strokeColor=none;fillColor=#E0F2F1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=18;fontStyle=1;fontColor=#00695C;" vertex="1" parent="1">
+          <mxGeometry x="80" y="680" width="200" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="users-table" value="Users Table&#xa;• id (PK)&#xa;• email, password&#xa;• role (guest/host)&#xa;• profile_data" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0F2F1;strokeColor=#00695C;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="80" y="720" width="120" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="properties-table" value="Properties Table&#xa;• id (PK)&#xa;• host_id (FK)&#xa;• title, description&#xa;• location, price" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0F2F1;strokeColor=#00695C;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="220" y="720" width="120" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="bookings-table" value="Bookings Table&#xa;• id (PK)&#xa;• guest_id (FK)&#xa;• property_id (FK)&#xa;• dates, status" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0F2F1;strokeColor=#00695C;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="360" y="720" width="120" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="reviews-table" value="Reviews Table&#xa;• id (PK)&#xa;• booking_id (FK)&#xa;• rating, comment&#xa;• created_at" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0F2F1;strokeColor=#00695C;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="500" y="720" width="120" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="payments-table" value="Payments Table&#xa;• id (PK)&#xa;• booking_id (FK)&#xa;• amount, currency&#xa;• status, gateway" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0F2F1;strokeColor=#00695C;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="640" y="720" width="120" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="notifications-table" value="Notifications Table&#xa;• id (PK)&#xa;• user_id (FK)&#xa;• type, message&#xa;• read_status" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0F2F1;strokeColor=#00695C;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="780" y="720" width="120" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- Technical Stack Section -->
+        <mxCell id="tech-stack-title" value="Technical Stack" style="text;html=1;strokeColor=none;fillColor=#FCE4EC;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=18;fontStyle=1;fontColor=#C2185B;" vertex="1" parent="1">
+          <mxGeometry x="920" y="680" width="200" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="backend-tech" value="Backend Technologies&#xa;• Python/Flask&#xa;• PostgreSQL&#xa;• Redis (Caching)&#xa;• JWT Authentication&#xa;• RESTful APIs&#xa;• GraphQL (Optional)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FCE4EC;strokeColor=#C2185B;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="920" y="720" width="180" height="100" as="geometry" />
+        </mxCell>
+        
+        <!-- Legend -->
+        <mxCell id="legend-title" value="Legend" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="820" width="60" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend-core" value="Core Features" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E8;strokeColor=#4CAF50;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="120" y="820" width="80" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend-secondary" value="Secondary Features" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF8E1;strokeColor=#FF9800;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="210" y="820" width="100" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend-database" value="Database" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0F2F1;strokeColor=#00695C;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="320" y="820" width="70" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend-tech" value="Tech Stack" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FCE4EC;strokeColor=#C2185B;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="400" y="820" width="70" height="20" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
