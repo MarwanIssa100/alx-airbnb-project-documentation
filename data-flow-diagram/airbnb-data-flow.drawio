@@ -1,0 +1,296 @@
+<mxfile host="app.diagrams.net" modified="2024-01-01T00:00:00.000Z" agent="5.0" etag="xxx" version="22.1.16" type="device">
+  <diagram name="Data Flow Diagram" id="data-flow-diagram">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Title -->
+        <mxCell id="title" value="Airbnb Clone - Data Flow Diagram (Level 0)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#2E86AB;" vertex="1" parent="1">
+          <mxGeometry x="400" y="20" width="600" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- External Entities -->
+        <mxCell id="guest" value="Guest" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1976D2;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="100" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="host" value="Host" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1976D2;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="admin" value="Admin" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1976D2;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="payment_gateway" value="Payment Gateway&#xa;(Stripe/PayPal)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1976D2;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="email_service" value="Email Service&#xa;(SendGrid)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1976D2;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="500" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="cloud_storage" value="Cloud Storage&#xa;(AWS S3)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1976D2;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="600" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Main System -->
+        <mxCell id="main_system" value="Airbnb Clone System" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#6C757D;strokeWidth=2;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="80" width="900" height="700" as="geometry" />
+        </mxCell>
+        
+        <!-- Processes -->
+        <mxCell id="p1" value="1.0&#xa;User Management" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E8;strokeColor=#4CAF50;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="120" width="120" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="p2" value="2.0&#xa;Property Management" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF8E1;strokeColor=#FF9800;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="120" width="120" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="p3" value="3.0&#xa;Search &amp; Discovery" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#9C27B0;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="120" width="120" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="p4" value="4.0&#xa;Booking Management" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1F5FE;strokeColor=#00BCD4;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="120" width="120" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="p5" value="5.0&#xa;Payment Processing" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFEBEE;strokeColor=#F44336;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="120" width="120" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="p6" value="6.0&#xa;Review System" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F1F8E9;strokeColor=#689F38;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="240" width="120" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="p7" value="7.0&#xa;Notification System" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#F57C00;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="240" width="120" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="p8" value="8.0&#xa;Admin Dashboard" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8F4FF;strokeColor=#7B1FA2;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="240" width="120" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="p9" value="9.0&#xa;File Management" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0F2F1;strokeColor=#00695C;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="240" width="120" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="p10" value="10.0&#xa;Analytics &amp; Reporting" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FCE4EC;strokeColor=#C2185B;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="240" width="120" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- Data Stores -->
+        <mxCell id="ds1" value="Users Database" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#E8F5E8;strokeColor=#4CAF50;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="280" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="ds2" value="Properties Database" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#FFF8E1;strokeColor=#FF9800;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="420" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="ds3" value="Bookings Database" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#E1F5FE;strokeColor=#00BCD4;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="560" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="ds4" value="Payments Database" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#FFEBEE;strokeColor=#F44336;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="700" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="ds5" value="Reviews Database" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#F1F8E9;strokeColor=#689F38;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="840" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="ds6" value="Cache (Redis)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#F3E5F5;strokeColor=#9C27B0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="280" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="ds7" value="Notifications Database" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#FFF3E0;strokeColor=#F57C00;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="420" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="ds8" value="Analytics Database" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#FCE4EC;strokeColor=#C2185B;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="560" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Data Flows from External Entities to Processes -->
+        <!-- Guest flows -->
+        <mxCell id="flow1" value="Registration Data" style="endArrow=classic;html=1;rounded=0;fontSize=10;fontColor=#1976D2;" edge="1" parent="1" source="guest" target="p1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="flow2" value="Search Criteria" style="endArrow=classic;html=1;rounded=0;fontSize=10;fontColor=#1976D2;" edge="1" parent="1" source="guest" target="p3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="flow3" value="Booking Request" style="endArrow=classic;html=1;rounded=0;fontSize=10;fontColor=#1976D2;" edge="1" parent="1" source="guest" target="p4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="flow4" value="Payment Info" style="endArrow=classic;html=1;rounded=0;fontSize=10;fontColor=#1976D2;" edge="1" parent="1" source="guest" target="p5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="flow5" value="Review Data" style="endArrow=classic;html=1;rounded=0;fontSize=10;fontColor=#1976D2;" edge="1" parent="1" source="guest" target="p6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Host flows -->
+        <mxCell id="flow6" value="Property Data" style="endArrow=classic;html=1;rounded=0;fontSize=10;fontColor=#1976D2;" edge="1" parent="1" source="host" target="p2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="flow7" value="Booking Response" style="endArrow=classic;html=1;rounded=0;fontSize=10;fontColor=#1976D2;" edge="1" parent="1" source="host" target="p4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Admin flows -->
+        <mxCell id="flow8" value="Admin Commands" style="endArrow=classic;html=1;rounded=0;fontSize=10;fontColor=#1976D2;" edge="1" parent="1" source="admin" target="p8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Payment Gateway flows -->
+        <mxCell id="flow9" value="Payment Response" style="endArrow=classic;html=1;rounded=0;fontSize=10;fontColor=#1976D2;" edge="1" parent="1" source="payment_gateway" target="p5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Email Service flows -->
+        <mxCell id="flow10" value="Email Status" style="endArrow=classic;html=1;rounded=0;fontSize=10;fontColor=#1976D2;" edge="1" parent="1" source="email_service" target="p7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Cloud Storage flows -->
+        <mxCell id="flow11" value="File Status" style="endArrow=classic;html=1;rounded=0;fontSize=10;fontColor=#1976D2;" edge="1" parent="1" source="cloud_storage" target="p9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Data Flows from Processes to Data Stores -->
+        <mxCell id="flow12" value="User Data" style="endArrow=classic;html=1;rounded=0;fontSize=10;fontColor=#4CAF50;" edge="1" parent="1" source="p1" target="ds1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="flow13" value="Property Data" style="endArrow=classic;html=1;rounded=0;fontSize=10;fontColor=#FF9800;" edge="1" parent="1" source="p2" target="ds2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="flow14" value="Search Results" style="endArrow=classic;html=1;rounded=0;fontSize=10;fontColor=#9C27B0;" edge="1" parent="1" source="p3" target="ds6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="flow15" value="Booking Data" style="endArrow=classic;html=1;rounded=0;fontSize=10;fontColor=#00BCD4;" edge="1" parent="1" source="p4" target="ds3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="flow16" value="Payment Data" style="endArrow=classic;html=1;rounded=0;fontSize=10;fontColor=#F44336;" edge="1" parent="1" source="p5" target="ds4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="flow17" value="Review Data" style="endArrow=classic;html=1;rounded=0;fontSize=10;fontColor=#689F38;" edge="1" parent="1" source="p6" target="ds5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="flow18" value="Notification Data" style="endArrow=classic;html=1;rounded=0;fontSize=10;fontColor=#F57C00;" edge="1" parent="1" source="p7" target="ds7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="flow19" value="Analytics Data" style="endArrow=classic;html=1;rounded=0;fontSize=10;fontColor=#C2185B;" edge="1" parent="1" source="p10" target="ds8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Data Flows from Data Stores to Processes -->
+        <mxCell id="flow20" value="User Info" style="endArrow=classic;html=1;rounded=0;fontSize=10;fontColor=#4CAF50;" edge="1" parent="1" source="ds1" target="p1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="flow21" value="Property Info" style="endArrow=classic;html=1;rounded=0;fontSize=10;fontColor=#FF9800;" edge="1" parent="1" source="ds2" target="p3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="flow22" value="Cached Results" style="endArrow=classic;html=1;rounded=0;fontSize=10;fontColor=#9C27B0;" edge="1" parent="1" source="ds6" target="p3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="flow23" value="Booking Info" style="endArrow=classic;html=1;rounded=0;fontSize=10;fontColor=#00BCD4;" edge="1" parent="1" source="ds3" target="p4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="flow24" value="Payment Info" style="endArrow=classic;html=1;rounded=0;fontSize=10;fontColor=#F44336;" edge="1" parent="1" source="ds4" target="p5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="flow25" value="Review Info" style="endArrow=classic;html=1;rounded=0;fontSize=10;fontColor=#689F38;" edge="1" parent="1" source="ds5" target="p6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Output flows to External Entities -->
+        <mxCell id="flow26" value="Search Results" style="endArrow=classic;html=1;rounded=0;fontSize=10;fontColor=#1976D2;" edge="1" parent="1" source="p3" target="guest">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="flow27" value="Booking Confirmation" style="endArrow=classic;html=1;rounded=0;fontSize=10;fontColor=#1976D2;" edge="1" parent="1" source="p4" target="guest">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="flow28" value="Payment Request" style="endArrow=classic;html=1;rounded=0;fontSize=10;fontColor=#1976D2;" edge="1" parent="1" source="p5" target="payment_gateway">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="flow29" value="Email Notifications" style="endArrow=classic;html=1;rounded=0;fontSize=10;fontColor=#1976D2;" edge="1" parent="1" source="p7" target="email_service">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="flow30" value="File Upload" style="endArrow=classic;html=1;rounded=0;fontSize=10;fontColor=#1976D2;" edge="1" parent="1" source="p9" target="cloud_storage">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Internal Process Flows -->
+        <mxCell id="flow31" value="User Auth" style="endArrow=classic;html=1;rounded=0;fontSize=10;fontColor=#666;" edge="1" parent="1" source="p1" target="p2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="flow32" value="Property Data" style="endArrow=classic;html=1;rounded=0;fontSize=10;fontColor=#666;" edge="1" parent="1" source="p2" target="p3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="flow33" value="Selected Property" style="endArrow=classic;html=1;rounded=0;fontSize=10;fontColor=#666;" edge="1" parent="1" source="p3" target="p4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="flow34" value="Booking Data" style="endArrow=classic;html=1;rounded=0;fontSize=10;fontColor=#666;" edge="1" parent="1" source="p4" target="p5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="flow35" value="Payment Success" style="endArrow=classic;html=1;rounded=0;fontSize=10;fontColor=#666;" edge="1" parent="1" source="p5" target="p6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="flow36" value="Booking Events" style="endArrow=classic;html=1;rounded=0;fontSize=10;fontColor=#666;" edge="1" parent="1" source="p4" target="p7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Legend -->
+        <mxCell id="legend-title" value="Legend" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="820" width="60" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend-external" value="External Entity" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1976D2;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="120" y="820" width="100" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend-process" value="Process" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E8;strokeColor=#4CAF50;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="230" y="820" width="70" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend-datastore" value="Data Store" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#FFF8E1;strokeColor=#FF9800;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="310" y="820" width="80" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend-flow" value="Data Flow" style="endArrow=classic;html=1;rounded=0;fontSize=10;fontColor=#666;" edge="1" parent="1">
+          <mxGeometry x="400" y="830" width="40" height="0" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile> 
